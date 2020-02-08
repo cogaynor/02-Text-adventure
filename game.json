@@ -1,0 +1,168 @@
+{
+	"PYRAMID": {
+		"name": "Pyramid at Giza",
+		"desc": "A towering, triangle-like thing is before you.",
+		"exits": [{
+			"exit": "ENTER",
+			"target": "HALLWAY"
+		}, {
+			"exit": "LEFT",
+			"target": "DESERT1"
+		}, {
+			"exit": "RIGHT",
+			"target": "CITY"
+        },
+        {
+            "exit": "FORWARD"
+            ,"target": "BUMP"
+        },{
+            "exit": "BACK"
+            ,"target": "WATERING"
+        }]},
+	"HALLWAY": {
+		"name": "Entrance hallway of the pyramid",
+		"desc": "a long dimly lit hallway inside the pyramid.",
+		"exits": [{
+			"exit": "BACK",
+            "target": "PYRAMID"
+        },{
+            "exit": "FORWARD",
+            "target": "TREASURE_ROOM"
+        },{
+            "exit": "LEAVE",
+            "target": "PYRAMID"
+        }
+		]},
+	"DESERT1": {
+		"name": "Desert",
+		"desc": "An empty, hot desert that stretches for miles and miles on. ",
+		"exits": [{
+			"exit": "RIGHT",
+			"target": "PYRAMID"
+		}]},
+	"CITY": {
+		"name": "Bustling city",
+		"desc": "A city full of people that seem happy and talkative.",
+		"exits": [{
+			"exit": "LEFT",
+            "target": "PYRAMID"
+        },{
+            "exit": "RIGHT",
+            "target": "DESERT2"
+        }, {
+            "exit": "FORWARD",
+            "target": "MARKET"
+        }, {
+            "exit": "BACK",
+            "target": "CAMEL_SHOP"
+        }
+		]},
+	"BUMP": {
+		"name": "Pyramid wall",
+		"desc": "You bump your head on the outside of the pyramid",
+		"exits": [{
+			"exit": "ENTER",
+			"target": "HALLWAY"
+		}, {
+			"exit": "LEFT",
+			"target": "DESERT1"
+		}, {
+			"exit": "RIGHT",
+			"target": "CITY"
+        },
+        {
+            "exit": "FORWARD"
+            ,"target": "BUMP"
+        },{
+            "exit": "BACK"
+            ,"target": "WATERING"
+		}]},
+	"WATERING": {
+		"name": "Watering hole",
+		"desc": "A large oasis bursting with life, such as camels, vegetation, and people.",
+		"exits": [{
+			"exit": "FORWARD",
+			"target": "PYRAMID"
+        }, {
+            "exit": "RIGHT",
+            "target": "CAMEL_SHOP"
+        }]},
+    "TREASURE_ROOM": {
+        "name": "Treasure Room",
+        "desc": "A large room lit by torches filled with unimaginable treasure protected by officers.",
+        "exits": [{
+            "exit": "BACK",
+            "target": "HALLWAY"
+        },{
+            "exit": "LEAVE",
+            "target": "PYRAMID"
+        }]
+    },
+    "CAMEL_SHOP": {
+        "name": "Camel's Inc",
+        "desc": "A medium-sized building next to a camel pen. There is a board on top that reads Camel's Inc.",
+        "exits": [{
+            "exit": "LEFT",
+            "target": "WATERING"
+        }, {
+            "exit": "FORWARD",
+            "target": "CITY"
+        },{
+            "exit": "ENTER",
+            "target": "INDOOR_SHOP"
+        }]
+    },
+    "INDOOR_SHOP": {
+        "name": "Inside the camel shop",
+        "desc": "A beautiful decorated room with a desk in the back and camel riding materials on the walls. Behind the desk is a man with a big, white smile.",
+        "exits": [{
+            "exit": "LEAVE",
+            "target": "CAMEL_SHOP"
+        }]
+    }, 
+    "MARKET": {
+        "name": "Marketplace",
+        "desc": "A street lined with merchants on either side. Sales people are shouting out deals left and right to try to attract customers.",
+        "exits": [{
+            "exit": "BACK",
+            "target": "CITY"
+        },{
+            "exit": "FORWARD",
+            "target": "BANDITS_DEN"
+        },{
+            "exit": "RIGHT",
+            "target": "BLACK_MARKET"
+        }]
+    },
+    "BLACK_MARKET": {
+        "name": "Black Market",
+        "desc": "A strip of the market where not as many people seem to be around full of shady shops. The merchants are selling dangerous and weird items.",
+        "exits": [{
+            "exit": "LEFT",
+            "target": "MARKET"
+        },{ 
+            "exit": "BACK",
+            "target": "DESERT2"
+        }]
+    },
+    "BANDITS_DEN": {
+        "name": "Bandit's Den",
+        "desc": "A dark place full of broken down houses and mysterious people. Several windows shut as you enter this area.",
+        "exits": [{
+            "exit": "BACK",
+            "target": "MARKET"
+        }]
+    },
+    "DESERT2": {
+        "name": "Desert",
+        "desc": "An empty, hot desert that stretches for miles and miles on. Forward the outskirts of a marketplace can be seen.",
+        "exits": [{
+            "exit": "LEFT",
+            "target": "CITY"
+        },{
+            "exit": "FORWARD",
+            "target": "BLACK_MARKET"
+        }] 
+    }
+    
+}
